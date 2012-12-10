@@ -8,31 +8,36 @@
 
 #import "HFRViewController.h"
 #import "HFRRectangleView.h"
-#import "ObjectiveSugar.h"
 #import "PSYBlockTimer.h"
+#import "HFRRythmStep.h"
+#import "HFRRythmChain.h"
 
 #define kHFRDifficulty (@"kHFRDifficulty")
 
 @interface HFRViewController ()
 @property (nonatomic, strong) NSArray *rectangleViewsArray;
 @property (nonatomic, strong) NSNumber *difficulty;
+@property (nonatomic, strong) HFRRythmChain *rythmChain;
 @end
 
 @implementation HFRViewController
 
 - (void)touchDetectedAtView:(UITapGestureRecognizer *)tapRec;
 {
-  [(HFRRectangleView *)tapRec.view highlight];
+  [(HFRRectangleView *)tapRec.view highlightWithLength:0.2];
 }
 
 - (void)playRythm;
 {
   [self.difficulty timesWithIndex:^(int index) {
-    [NSTimer scheduledTimerWithTimeInterval:(1.0 * (index+1)) repeats:NO usingBlock:^(NSTimer *timer) {
-      int number = arc4random_uniform(9);
-      [[self.rectangleViewsArray objectAtIndex:[[NSNumber numberWithInt:number] unsignedIntegerValue]] highlight];
-    }];
+    HFRRythmStep *newStep = [HFRRythmStep new];
+    int number = arc4random_uniform(9);
+    newStep.index = [[NSNumber numberWithInt:number] unsignedIntegerValue];
+    newStep.length = [NSNumber numberWithFloat:0.2];
+    newStep.stepView = [self.rectangleViewsArray objectAtIndex:[[NSNumber numberWithInt:number] unsignedIntegerValue]];
+    [self.rythmChain.chain addObject:newStep];
   }];
+  [self.rythmChain startChain];
 }
 
 - (void)viewDidLoad
@@ -40,6 +45,8 @@
   [super viewDidLoad];
   [self.view setBackgroundColor:[UIColor blackColor]];
 
+  self.rythmChain = [HFRRythmChain new];
+  
   // Standardschwierigkeitsgrad soll 3 Lichter sein
   if ([[NSUserDefaults standardUserDefaults] valueForKey:kHFRDifficulty] != nil) {
     self.difficulty = [[NSUserDefaults standardUserDefaults] valueForKey:kHFRDifficulty];

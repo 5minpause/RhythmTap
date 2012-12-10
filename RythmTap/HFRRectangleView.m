@@ -41,13 +41,13 @@
   CGContextRestoreGState(context);
 }
 
-- (void)highlight;
+- (void)highlightWithLength:(float)length;
 {
   UIColor *oldColor = self.backgroundColor;
   UIColor *newColor = [self.backgroundColor colorWithAlphaComponent:0.2];
   [self setBackgroundColor:newColor];
   [self setNeedsDisplay];
-  [NSTimer scheduledTimerWithTimeInterval:0.1 repeats:NO usingBlock:^(NSTimer *timer) {
+  [NSTimer scheduledTimerWithTimeInterval:length repeats:NO usingBlock:^(NSTimer *timer) {
     [self setBackgroundColor:oldColor];
     [self setNeedsDisplay];
   }];

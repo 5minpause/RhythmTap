@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD0E24561675D6D1002FB5C8 /* HFRRythmStep.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0E24551675D6D1002FB5C8 /* HFRRythmStep.m */; };
+		DD0E24591675D8E3002FB5C8 /* HFRRythmChain.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0E24581675D8E3002FB5C8 /* HFRRythmChain.m */; };
 		DDD0B4D41674CBC0004D42D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD0B4D31674CBC0004D42D0 /* UIKit.framework */; };
 		DDD0B4D61674CBC0004D42D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD0B4D51674CBC0004D42D0 /* Foundation.framework */; };
 		DDD0B4D81674CBC0004D42D0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD0B4D71674CBC0004D42D0 /* CoreGraphics.framework */; };
@@ -30,6 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD0E24541675D6D1002FB5C8 /* HFRRythmStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFRRythmStep.h; sourceTree = "<group>"; };
+		DD0E24551675D6D1002FB5C8 /* HFRRythmStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFRRythmStep.m; sourceTree = "<group>"; };
+		DD0E24571675D8E3002FB5C8 /* HFRRythmChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFRRythmChain.h; sourceTree = "<group>"; };
+		DD0E24581675D8E3002FB5C8 /* HFRRythmChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFRRythmChain.m; sourceTree = "<group>"; };
 		DDD0B4D01674CBC0004D42D0 /* RythmTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RythmTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD0B4D31674CBC0004D42D0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DDD0B4D51674CBC0004D42D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -124,6 +130,10 @@
 				DDD0B4DA1674CBC0004D42D0 /* Supporting Files */,
 				DDD0B5121674E1DC004D42D0 /* PSYBlockTimer.h */,
 				DDD0B5131674E1E9004D42D0 /* PSYBlockTimer.m */,
+				DD0E24541675D6D1002FB5C8 /* HFRRythmStep.h */,
+				DD0E24551675D6D1002FB5C8 /* HFRRythmStep.m */,
+				DD0E24571675D8E3002FB5C8 /* HFRRythmChain.h */,
+				DD0E24581675D8E3002FB5C8 /* HFRRythmChain.m */,
 			);
 			path = RythmTap;
 			sourceTree = "<group>";
@@ -259,6 +269,8 @@
 				DDD0B5101674D63B004D42D0 /* NSSet+Accessors.m in Sources */,
 				DDD0B5111674D63B004D42D0 /* NSString+Sweetner.m in Sources */,
 				DDD0B5141674E1E9004D42D0 /* PSYBlockTimer.m in Sources */,
+				DD0E24561675D6D1002FB5C8 /* HFRRythmStep.m in Sources */,
+				DD0E24591675D8E3002FB5C8 /* HFRRythmChain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +395,7 @@
 				DDD0B4F51674CBC0004D42D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

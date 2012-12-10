@@ -13,5 +13,5 @@
 @property (nonatomic) NSNumber *startY;
 @property (nonatomic, weak) NSNumber *index;
 
-- (void)highlight;
+- (void)highlightWithLength:(float)length;
 @end
