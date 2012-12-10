@@ -10,7 +10,8 @@
 #import "HFRRectangleView.h"
 
 @interface HFRRythmStep : NSObject
-@property (nonatomic) NSUInteger *index;
+@property (nonatomic) NSUInteger index;
 @property (nonatomic) NSNumber *length;
 @property (nonatomic, strong) HFRRectangleView *stepView;
+- (BOOL)compareWithRythmStep:(HFRRythmStep *)step;
 @end

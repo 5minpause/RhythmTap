@@ -11,6 +11,7 @@
 #import "PSYBlockTimer.h"
 #import "HFRRythmStep.h"
 #import "HFRRythmChain.h"
+#import "MBProgressHUD.h"
 
 #define kHFRDifficulty (@"kHFRDifficulty")
 
@@ -18,6 +19,8 @@
 @property (nonatomic, strong) NSArray *rectangleViewsArray;
 @property (nonatomic, strong) NSNumber *difficulty;
 @property (nonatomic, strong) HFRRythmChain *rythmChain;
+@property (nonatomic, strong) HFRRythmChain *userChain;
+- (void)calculateResult;
 @end
 
 @implementation HFRViewController
@@ -25,6 +28,29 @@
 - (void)touchDetectedAtView:(UITapGestureRecognizer *)tapRec;
 {
   [(HFRRectangleView *)tapRec.view highlightWithLength:0.2];
+  HFRRythmStep *playedStep = [HFRRythmStep new];
+  playedStep.index = [self.rectangleViewsArray indexOfObject:(HFRRectangleView *)tapRec.view];
+  playedStep.length = [NSNumber numberWithFloat:0.2];
+  [self.userChain.chain addObject:playedStep];
+  if (self.userChain.chain.count == self.difficulty.unsignedIntegerValue) {
+    [self calculateResult];
+  }
+}
+
+- (void)calculateResult
+{
+  BOOL result = [self.userChain compareWithChain:self.rythmChain];
+  [self.userChain.chain removeAllObjects];
+  [self.rythmChain.chain removeAllObjects];
+
+  MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+  hud.mode = MBProgressHUDModeText;
+  hud.labelText = result ? @"Gewonnen!" : @"Leider nicht gewonnen.";
+  double delayInSeconds = 1.5;
+  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+  dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+  });
 }
 
 - (void)playRythm;
@@ -40,12 +66,18 @@
   [self.rythmChain startChain];
 }
 
+- (IBAction)newRoundButtonPressed:(id)sender;
+{
+  [self playRythm];
+}
+
 - (void)viewDidLoad
 {
   [super viewDidLoad];
   [self.view setBackgroundColor:[UIColor blackColor]];
 
   self.rythmChain = [HFRRythmChain new];
+  self.userChain = [HFRRythmChain new];
   
   // Standardschwierigkeitsgrad soll 3 Lichter sein
   if ([[NSUserDefaults standardUserDefaults] valueForKey:kHFRDifficulty] != nil) {

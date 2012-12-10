@@ -11,6 +11,7 @@
 #import "HFRRythmStep.h"
 
 @implementation HFRRythmChain
+
 - (void)startChain;
 {
   [self.chain eachWithIndex:^(HFRRythmStep *step, int index) {
@@ -20,6 +21,16 @@
   }];
 }
 
+- (BOOL)compareWithChain:(HFRRythmChain *)otherChain;
+{
+  __block BOOL result = false;
+
+  [otherChain.chain eachWithIndex:^(HFRRythmStep *step, int index) {
+    result = [[self.chain objectAtIndex:index] compareWithRythmStep:step];
+  }];
+
+  return result;
+}
 - (id)init
 {
   self = [super init];

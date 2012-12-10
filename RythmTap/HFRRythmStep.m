@@ -9,5 +9,8 @@
 #import "HFRRythmStep.h"
 
 @implementation HFRRythmStep
-
+- (BOOL)compareWithRythmStep:(HFRRythmStep *)step;
+{
+  return (step.index == self.index && step.length.floatValue == self.length.floatValue);
+}
 @end

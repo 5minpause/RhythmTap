@@ -12,4 +12,5 @@
 @property (nonatomic, strong) NSMutableArray *chain;
 
 - (void)startChain;
+- (BOOL)compareWithChain:(HFRRythmChain *)otherChain;
 @end

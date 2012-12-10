@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HFRViewController : UIViewController
-
+@property (strong, nonatomic) IBOutlet UIButton *nextRoundButton;
+- (IBAction)newRoundButtonPressed:(id)sender;
 @end
