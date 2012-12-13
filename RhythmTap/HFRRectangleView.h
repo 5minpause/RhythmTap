@@ -12,6 +12,6 @@
 @property (nonatomic) NSNumber *startX;
 @property (nonatomic) NSNumber *startY;
 @property (nonatomic, weak) NSNumber *index;
-
+@property (nonatomic) UIColor *bgColor;
 - (void)highlightWithLength:(float)length;
 @end

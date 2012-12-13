@@ -13,7 +13,9 @@
 #import "HFRRhythmChain.h"
 #import "MBProgressHUD.h"
 
-#define kHFRDifficulty (@"kHFRDifficulty")
+#define kHFRDifficulty     (@"kHFRDifficulty")
+#define kHFRTouchLength    (@"kHFRTouchLength")
+#define kHFRTouchTime      (@"kHFRTouchTime")
 
 @interface HFRViewController ()
 @property (nonatomic, strong) NSArray *rectangleViewsArray;
@@ -27,10 +29,17 @@
 
 - (void)touchDetectedAtView:(UITapGestureRecognizer *)tapRec;
 {
+  
   [(HFRRectangleView *)tapRec.view highlightWithLength:0.2];
-  HFRRhythmStep *playedStep = [HFRRhythmStep new];
+  __block HFRRhythmStep *playedStep = [HFRRhythmStep new];
   playedStep.index = [self.rectangleViewsArray indexOfObject:(HFRRectangleView *)tapRec.view];
-  playedStep.length = [NSNumber numberWithFloat:0.2];
+  [[NSNotificationCenter defaultCenter] addObserverForName:kHFRTouchTime
+                                                    object:nil
+                                                     queue:[NSOperationQueue mainQueue]
+                                                usingBlock:^(NSNotification *note)
+  {
+    playedStep.length = [note.userInfo valueForKey:kHFRTouchLength];
+  }];
   [self.userChain.chain addObject:playedStep];
   if (self.userChain.chain.count == self.difficulty.unsignedIntegerValue) {
     [self calculateResult];
@@ -114,6 +123,7 @@
     recView.index = [NSNumber numberWithInt:index];
     NSUInteger colorInt = [recView.index unsignedIntegerValue];
     [recView setBackgroundColor:[colors objectAtIndex:colorInt]];
+    recView.bgColor = [colors objectAtIndex:colorInt];
 
     // Gesture Recognizer
     UITapGestureRecognizer *recog = [UITapGestureRecognizer new];

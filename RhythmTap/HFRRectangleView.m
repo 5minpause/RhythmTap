@@ -10,6 +10,14 @@
 #import "Common.h"
 #import "PSYBlockTimer.h"
 
+#define kHFRTouchTime      (@"kHFRTouchTime")
+#define kHFRTouchLength    (@"kHFRTouchLength")
+
+@interface HFRRectangleView ()
+@property (nonatomic, strong) NSDate *touchStarted;
+//@property (nonatomic, strong) NSDate *touchEnded;
+@end
+
 @implementation HFRRectangleView
 
 - (id)initWithFrame:(CGRect)frame
@@ -43,14 +51,39 @@
 
 - (void)highlightWithLength:(float)length;
 {
-  UIColor *oldColor = self.backgroundColor;
-  UIColor *newColor = [self.backgroundColor colorWithAlphaComponent:0.2];
+  UIColor *newColor = [self.bgColor colorWithAlphaComponent:0.2];
   [self setBackgroundColor:newColor];
   [self setNeedsDisplay];
-  [NSTimer scheduledTimerWithTimeInterval:length repeats:NO usingBlock:^(NSTimer *timer) {
-    [self setBackgroundColor:oldColor];
-    [self setNeedsDisplay];
-  }];
+//  [NSTimer scheduledTimerWithTimeInterval:length repeats:NO usingBlock:^(NSTimer *timer) {
+//    [self setBackgroundColor:oldColor];
+//    [self setNeedsDisplay];
+//  }];
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+  self.touchStarted = [NSDate date];
+}
+
+- (void)handleTouchEnded;
+{
+  double time = [self.touchStarted timeIntervalSinceNow] * (-1);
+  NSDictionary *dic = [NSDictionary dictionaryWithObject:[NSNumber numberWithDouble:time] forKey:kHFRTouchLength];
+  [[NSNotificationCenter defaultCenter] postNotificationName:kHFRTouchTime
+                                                      object:nil
+                                                    userInfo:dic];
+  [self setBackgroundColor:self.bgColor];
+  [self setNeedsDisplay];
+
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+  [self handleTouchEnded];
+}
+
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{
+  [self handleTouchEnded];
+}
 @end
