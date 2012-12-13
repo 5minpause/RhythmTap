@@ -7,76 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD0E24561675D6D1002FB5C8 /* HFRRhythmStep.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0E24551675D6D1002FB5C8 /* HFRRhythmStep.m */; };
-		DD0E24591675D8E3002FB5C8 /* HFRRhythmChain.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0E24581675D8E3002FB5C8 /* HFRRhythmChain.m */; };
-		DDB20FE4167641F80063B9EB /* HFRMessagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB20FE3167641F80063B9EB /* HFRMessagesView.m */; };
-		DDC11D3916764A7000D8521B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC11D3816764A7000D8521B /* MBProgressHUD.m */; };
+		DD68BB25167A4013008FF8FD /* HFRRhythmStep.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68BB24167A4013008FF8FD /* HFRRhythmStep.m */; };
+		DD68BB29167A4028008FF8FD /* HFRRhythmChain.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68BB27167A4028008FF8FD /* HFRRhythmChain.m */; };
+		DD68BB2E167A4045008FF8FD /* HFRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68BB2A167A4045008FF8FD /* HFRViewController.m */; };
+		DD68BB2F167A4045008FF8FD /* HFRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68BB2C167A4045008FF8FD /* HFRAppDelegate.m */; };
+		DD68BB32167A404C008FF8FD /* HFRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD68BB30167A404C008FF8FD /* HFRViewController.xib */; };
+		DD68BB40167A405F008FF8FD /* NSArray+Accessors.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68BB34167A405F008FF8FD /* NSArray+Accessors.m */; };
+		DD68BB41167A405F008FF8FD /* NSDictionary+Rubyfy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68BB36167A405F008FF8FD /* NSDictionary+Rubyfy.m */; };
+		DD68BB42167A405F008FF8FD /* NSMutableArray+Rubyfy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68BB38167A405F008FF8FD /* NSMutableArray+Rubyfy.m */; };
+		DD68BB43167A405F008FF8FD /* NSNumber+Rubyfy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68BB3A167A405F008FF8FD /* NSNumber+Rubyfy.m */; };
+		DD68BB44167A405F008FF8FD /* NSSet+Accessors.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68BB3C167A405F008FF8FD /* NSSet+Accessors.m */; };
+		DD68BB45167A405F008FF8FD /* NSString+Sweetner.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68BB3E167A405F008FF8FD /* NSString+Sweetner.m */; };
+		DD68BB4A167A406A008FF8FD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68BB47167A406A008FF8FD /* MBProgressHUD.m */; };
+		DD68BB4B167A406A008FF8FD /* PSYBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68BB48167A406A008FF8FD /* PSYBlockTimer.m */; };
+		DD68BB52167A4081008FF8FD /* HFRMessagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68BB4D167A4081008FF8FD /* HFRMessagesView.m */; };
+		DD68BB53167A4081008FF8FD /* HFRRectangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68BB4F167A4081008FF8FD /* HFRRectangleView.m */; };
+		DD68BB54167A4081008FF8FD /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68BB51167A4081008FF8FD /* Common.m */; };
+		DD68BB56167A4088008FF8FD /* RhythmTap-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD68BB55167A4088008FF8FD /* RhythmTap-Info.plist */; };
+		DD68BB58167A40A3008FF8FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68BB57167A40A3008FF8FD /* main.m */; };
+		DD68BB5D167A40B5008FF8FD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD68BB5A167A40B5008FF8FD /* Default-568h@2x.png */; };
+		DD68BB5E167A40B5008FF8FD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DD68BB5B167A40B5008FF8FD /* Default.png */; };
+		DD68BB5F167A40B5008FF8FD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD68BB5C167A40B5008FF8FD /* Default@2x.png */; };
 		DDD0B4D41674CBC0004D42D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD0B4D31674CBC0004D42D0 /* UIKit.framework */; };
 		DDD0B4D61674CBC0004D42D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD0B4D51674CBC0004D42D0 /* Foundation.framework */; };
 		DDD0B4D81674CBC0004D42D0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD0B4D71674CBC0004D42D0 /* CoreGraphics.framework */; };
-		DDD0B4DE1674CBC0004D42D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDD0B4DC1674CBC0004D42D0 /* InfoPlist.strings */; };
-		DDD0B4E01674CBC0004D42D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD0B4DF1674CBC0004D42D0 /* main.m */; };
-		DDD0B4E41674CBC0004D42D0 /* HFRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD0B4E31674CBC0004D42D0 /* HFRAppDelegate.m */; };
-		DDD0B4E61674CBC0004D42D0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD0B4E51674CBC0004D42D0 /* Default.png */; };
-		DDD0B4E81674CBC0004D42D0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD0B4E71674CBC0004D42D0 /* Default@2x.png */; };
-		DDD0B4EA1674CBC0004D42D0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD0B4E91674CBC0004D42D0 /* Default-568h@2x.png */; };
-		DDD0B4ED1674CBC0004D42D0 /* HFRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD0B4EC1674CBC0004D42D0 /* HFRViewController.m */; };
-		DDD0B4F01674CBC0004D42D0 /* HFRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDD0B4EE1674CBC0004D42D0 /* HFRViewController.xib */; };
-		DDD0B4FA1674CC86004D42D0 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD0B4F91674CC86004D42D0 /* Common.m */; };
-		DDD0B4FD1674CD19004D42D0 /* HFRRectangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD0B4FC1674CD19004D42D0 /* HFRRectangleView.m */; };
-		DDD0B50C1674D63B004D42D0 /* NSArray+Accessors.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD0B5001674D63B004D42D0 /* NSArray+Accessors.m */; };
-		DDD0B50D1674D63B004D42D0 /* NSDictionary+Rubyfy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD0B5021674D63B004D42D0 /* NSDictionary+Rubyfy.m */; };
-		DDD0B50E1674D63B004D42D0 /* NSMutableArray+Rubyfy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD0B5041674D63B004D42D0 /* NSMutableArray+Rubyfy.m */; };
-		DDD0B50F1674D63B004D42D0 /* NSNumber+Rubyfy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD0B5061674D63B004D42D0 /* NSNumber+Rubyfy.m */; };
-		DDD0B5101674D63B004D42D0 /* NSSet+Accessors.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD0B5081674D63B004D42D0 /* NSSet+Accessors.m */; };
-		DDD0B5111674D63B004D42D0 /* NSString+Sweetner.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD0B50A1674D63B004D42D0 /* NSString+Sweetner.m */; };
-		DDD0B5141674E1E9004D42D0 /* PSYBlockTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD0B5131674E1E9004D42D0 /* PSYBlockTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DD0E24541675D6D1002FB5C8 /* HFRRhythmStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFRRhythmStep.h; sourceTree = "<group>"; };
-		DD0E24551675D6D1002FB5C8 /* HFRRhythmStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFRRhythmStep.m; sourceTree = "<group>"; };
-		DD0E24571675D8E3002FB5C8 /* HFRRhythmChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFRRhythmChain.h; sourceTree = "<group>"; };
-		DD0E24581675D8E3002FB5C8 /* HFRRhythmChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFRRhythmChain.m; sourceTree = "<group>"; };
-		DDB20FE2167641F80063B9EB /* HFRMessagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFRMessagesView.h; sourceTree = "<group>"; };
-		DDB20FE3167641F80063B9EB /* HFRMessagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFRMessagesView.m; sourceTree = "<group>"; };
-		DDC11D3716764A7000D8521B /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		DDC11D3816764A7000D8521B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		DD68BB23167A4013008FF8FD /* HFRRhythmStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFRRhythmStep.h; path = RhythmTap/HFRRhythmStep.h; sourceTree = SOURCE_ROOT; };
+		DD68BB24167A4013008FF8FD /* HFRRhythmStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFRRhythmStep.m; path = RhythmTap/HFRRhythmStep.m; sourceTree = SOURCE_ROOT; };
+		DD68BB27167A4028008FF8FD /* HFRRhythmChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFRRhythmChain.m; path = RhythmTap/HFRRhythmChain.m; sourceTree = SOURCE_ROOT; };
+		DD68BB28167A4028008FF8FD /* HFRRhythmChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFRRhythmChain.h; path = RhythmTap/HFRRhythmChain.h; sourceTree = SOURCE_ROOT; };
+		DD68BB2A167A4045008FF8FD /* HFRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFRViewController.m; path = RhythmTap/HFRViewController.m; sourceTree = SOURCE_ROOT; };
+		DD68BB2B167A4045008FF8FD /* HFRAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFRAppDelegate.h; path = RhythmTap/HFRAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		DD68BB2C167A4045008FF8FD /* HFRAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFRAppDelegate.m; path = RhythmTap/HFRAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		DD68BB2D167A4045008FF8FD /* HFRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFRViewController.h; path = RhythmTap/HFRViewController.h; sourceTree = SOURCE_ROOT; };
+		DD68BB31167A404C008FF8FD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = RhythmTap/en.lproj/HFRViewController.xib; sourceTree = SOURCE_ROOT; };
+		DD68BB33167A405F008FF8FD /* NSArray+Accessors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Accessors.h"; path = "RhythmTap/src/NSArray+Accessors.h"; sourceTree = SOURCE_ROOT; };
+		DD68BB34167A405F008FF8FD /* NSArray+Accessors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Accessors.m"; path = "RhythmTap/src/NSArray+Accessors.m"; sourceTree = SOURCE_ROOT; };
+		DD68BB35167A405F008FF8FD /* NSDictionary+Rubyfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Rubyfy.h"; path = "RhythmTap/src/NSDictionary+Rubyfy.h"; sourceTree = SOURCE_ROOT; };
+		DD68BB36167A405F008FF8FD /* NSDictionary+Rubyfy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Rubyfy.m"; path = "RhythmTap/src/NSDictionary+Rubyfy.m"; sourceTree = SOURCE_ROOT; };
+		DD68BB37167A405F008FF8FD /* NSMutableArray+Rubyfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Rubyfy.h"; path = "RhythmTap/src/NSMutableArray+Rubyfy.h"; sourceTree = SOURCE_ROOT; };
+		DD68BB38167A405F008FF8FD /* NSMutableArray+Rubyfy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+Rubyfy.m"; path = "RhythmTap/src/NSMutableArray+Rubyfy.m"; sourceTree = SOURCE_ROOT; };
+		DD68BB39167A405F008FF8FD /* NSNumber+Rubyfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNumber+Rubyfy.h"; path = "RhythmTap/src/NSNumber+Rubyfy.h"; sourceTree = SOURCE_ROOT; };
+		DD68BB3A167A405F008FF8FD /* NSNumber+Rubyfy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+Rubyfy.m"; path = "RhythmTap/src/NSNumber+Rubyfy.m"; sourceTree = SOURCE_ROOT; };
+		DD68BB3B167A405F008FF8FD /* NSSet+Accessors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSSet+Accessors.h"; path = "RhythmTap/src/NSSet+Accessors.h"; sourceTree = SOURCE_ROOT; };
+		DD68BB3C167A405F008FF8FD /* NSSet+Accessors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSSet+Accessors.m"; path = "RhythmTap/src/NSSet+Accessors.m"; sourceTree = SOURCE_ROOT; };
+		DD68BB3D167A405F008FF8FD /* NSString+Sweetner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Sweetner.h"; path = "RhythmTap/src/NSString+Sweetner.h"; sourceTree = SOURCE_ROOT; };
+		DD68BB3E167A405F008FF8FD /* NSString+Sweetner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Sweetner.m"; path = "RhythmTap/src/NSString+Sweetner.m"; sourceTree = SOURCE_ROOT; };
+		DD68BB3F167A405F008FF8FD /* ObjectiveSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObjectiveSugar.h; path = RhythmTap/src/ObjectiveSugar.h; sourceTree = SOURCE_ROOT; };
+		DD68BB46167A406A008FF8FD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = RhythmTap/MBProgressHUD.h; sourceTree = SOURCE_ROOT; };
+		DD68BB47167A406A008FF8FD /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = RhythmTap/MBProgressHUD.m; sourceTree = SOURCE_ROOT; };
+		DD68BB48167A406A008FF8FD /* PSYBlockTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSYBlockTimer.m; path = RhythmTap/PSYBlockTimer.m; sourceTree = SOURCE_ROOT; };
+		DD68BB49167A406A008FF8FD /* PSYBlockTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSYBlockTimer.h; path = RhythmTap/PSYBlockTimer.h; sourceTree = SOURCE_ROOT; };
+		DD68BB4C167A4081008FF8FD /* HFRMessagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFRMessagesView.h; path = RhythmTap/HFRMessagesView.h; sourceTree = SOURCE_ROOT; };
+		DD68BB4D167A4081008FF8FD /* HFRMessagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFRMessagesView.m; path = RhythmTap/HFRMessagesView.m; sourceTree = SOURCE_ROOT; };
+		DD68BB4E167A4081008FF8FD /* HFRRectangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFRRectangleView.h; path = RhythmTap/HFRRectangleView.h; sourceTree = SOURCE_ROOT; };
+		DD68BB4F167A4081008FF8FD /* HFRRectangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFRRectangleView.m; path = RhythmTap/HFRRectangleView.m; sourceTree = SOURCE_ROOT; };
+		DD68BB50167A4081008FF8FD /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Common.h; path = RhythmTap/Common.h; sourceTree = SOURCE_ROOT; };
+		DD68BB51167A4081008FF8FD /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Common.m; path = RhythmTap/Common.m; sourceTree = SOURCE_ROOT; };
+		DD68BB55167A4088008FF8FD /* RhythmTap-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "RhythmTap-Info.plist"; path = "RhythmTap/RhythmTap-Info.plist"; sourceTree = SOURCE_ROOT; };
+		DD68BB57167A40A3008FF8FD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RhythmTap/main.m; sourceTree = SOURCE_ROOT; };
+		DD68BB59167A40AB008FF8FD /* RhythmTap-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RhythmTap-Prefix.pch"; path = "RhythmTap/RhythmTap-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		DD68BB5A167A40B5008FF8FD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "RhythmTap/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		DD68BB5B167A40B5008FF8FD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = RhythmTap/Default.png; sourceTree = SOURCE_ROOT; };
+		DD68BB5C167A40B5008FF8FD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "RhythmTap/Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		DDD0B4D01674CBC0004D42D0 /* RhythmTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RhythmTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD0B4D31674CBC0004D42D0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DDD0B4D51674CBC0004D42D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DDD0B4D71674CBC0004D42D0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DDD0B4DB1674CBC0004D42D0 /* RhythmTap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RhythmTap-Info.plist"; sourceTree = "<group>"; };
-		DDD0B4DD1674CBC0004D42D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DDD0B4DF1674CBC0004D42D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DDD0B4E11674CBC0004D42D0 /* RhythmTap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RhythmTap-Prefix.pch"; sourceTree = "<group>"; };
-		DDD0B4E21674CBC0004D42D0 /* HFRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFRAppDelegate.h; sourceTree = "<group>"; };
-		DDD0B4E31674CBC0004D42D0 /* HFRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFRAppDelegate.m; sourceTree = "<group>"; };
-		DDD0B4E51674CBC0004D42D0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		DDD0B4E71674CBC0004D42D0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		DDD0B4E91674CBC0004D42D0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		DDD0B4EB1674CBC0004D42D0 /* HFRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFRViewController.h; sourceTree = "<group>"; };
-		DDD0B4EC1674CBC0004D42D0 /* HFRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFRViewController.m; sourceTree = "<group>"; };
-		DDD0B4EF1674CBC0004D42D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HFRViewController.xib; sourceTree = "<group>"; };
-		DDD0B4F81674CC86004D42D0 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
-		DDD0B4F91674CC86004D42D0 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
-		DDD0B4FB1674CD19004D42D0 /* HFRRectangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFRRectangleView.h; sourceTree = "<group>"; };
-		DDD0B4FC1674CD19004D42D0 /* HFRRectangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFRRectangleView.m; sourceTree = "<group>"; };
-		DDD0B4FF1674D63B004D42D0 /* NSArray+Accessors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Accessors.h"; sourceTree = "<group>"; };
-		DDD0B5001674D63B004D42D0 /* NSArray+Accessors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Accessors.m"; sourceTree = "<group>"; };
-		DDD0B5011674D63B004D42D0 /* NSDictionary+Rubyfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Rubyfy.h"; sourceTree = "<group>"; };
-		DDD0B5021674D63B004D42D0 /* NSDictionary+Rubyfy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Rubyfy.m"; sourceTree = "<group>"; };
-		DDD0B5031674D63B004D42D0 /* NSMutableArray+Rubyfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Rubyfy.h"; sourceTree = "<group>"; };
-		DDD0B5041674D63B004D42D0 /* NSMutableArray+Rubyfy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Rubyfy.m"; sourceTree = "<group>"; };
-		DDD0B5051674D63B004D42D0 /* NSNumber+Rubyfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Rubyfy.h"; sourceTree = "<group>"; };
-		DDD0B5061674D63B004D42D0 /* NSNumber+Rubyfy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Rubyfy.m"; sourceTree = "<group>"; };
-		DDD0B5071674D63B004D42D0 /* NSSet+Accessors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+Accessors.h"; sourceTree = "<group>"; };
-		DDD0B5081674D63B004D42D0 /* NSSet+Accessors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+Accessors.m"; sourceTree = "<group>"; };
-		DDD0B5091674D63B004D42D0 /* NSString+Sweetner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Sweetner.h"; sourceTree = "<group>"; };
-		DDD0B50A1674D63B004D42D0 /* NSString+Sweetner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Sweetner.m"; sourceTree = "<group>"; };
-		DDD0B50B1674D63B004D42D0 /* ObjectiveSugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveSugar.h; sourceTree = "<group>"; };
-		DDD0B5121674E1DC004D42D0 /* PSYBlockTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSYBlockTimer.h; sourceTree = "<group>"; };
-		DDD0B5131674E1E9004D42D0 /* PSYBlockTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSYBlockTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +95,10 @@
 		DDB20FE0167641A80063B9EB /* RhythmGroup */ = {
 			isa = PBXGroup;
 			children = (
-				DD0E24541675D6D1002FB5C8 /* HFRRhythmStep.h */,
-				DD0E24551675D6D1002FB5C8 /* HFRRhythmStep.m */,
-				DD0E24571675D8E3002FB5C8 /* HFRRhythmChain.h */,
-				DD0E24581675D8E3002FB5C8 /* HFRRhythmChain.m */,
+				DD68BB27167A4028008FF8FD /* HFRRhythmChain.m */,
+				DD68BB28167A4028008FF8FD /* HFRRhythmChain.h */,
+				DD68BB23167A4013008FF8FD /* HFRRhythmStep.h */,
+				DD68BB24167A4013008FF8FD /* HFRRhythmStep.m */,
 			);
 			name = RhythmGroup;
 			sourceTree = "<group>";
@@ -107,10 +106,10 @@
 		DDB20FE1167641BA0063B9EB /* 3rd Party */ = {
 			isa = PBXGroup;
 			children = (
-				DDC11D3716764A7000D8521B /* MBProgressHUD.h */,
-				DDC11D3816764A7000D8521B /* MBProgressHUD.m */,
-				DDD0B5121674E1DC004D42D0 /* PSYBlockTimer.h */,
-				DDD0B5131674E1E9004D42D0 /* PSYBlockTimer.m */,
+				DD68BB46167A406A008FF8FD /* MBProgressHUD.h */,
+				DD68BB47167A406A008FF8FD /* MBProgressHUD.m */,
+				DD68BB48167A406A008FF8FD /* PSYBlockTimer.m */,
+				DD68BB49167A406A008FF8FD /* PSYBlockTimer.h */,
 			);
 			name = "3rd Party";
 			sourceTree = "<group>";
@@ -118,12 +117,12 @@
 		DDB20FE51676424E0063B9EB /* Drawing */ = {
 			isa = PBXGroup;
 			children = (
-				DDB20FE2167641F80063B9EB /* HFRMessagesView.h */,
-				DDB20FE3167641F80063B9EB /* HFRMessagesView.m */,
-				DDD0B4F81674CC86004D42D0 /* Common.h */,
-				DDD0B4F91674CC86004D42D0 /* Common.m */,
-				DDD0B4FB1674CD19004D42D0 /* HFRRectangleView.h */,
-				DDD0B4FC1674CD19004D42D0 /* HFRRectangleView.m */,
+				DD68BB4C167A4081008FF8FD /* HFRMessagesView.h */,
+				DD68BB4D167A4081008FF8FD /* HFRMessagesView.m */,
+				DD68BB4E167A4081008FF8FD /* HFRRectangleView.h */,
+				DD68BB4F167A4081008FF8FD /* HFRRectangleView.m */,
+				DD68BB50167A4081008FF8FD /* Common.h */,
+				DD68BB51167A4081008FF8FD /* Common.m */,
 			);
 			name = Drawing;
 			sourceTree = "<group>";
@@ -158,15 +157,15 @@
 		DDD0B4D91674CBC0004D42D0 /* RhythmTap */ = {
 			isa = PBXGroup;
 			children = (
+				DD68BB30167A404C008FF8FD /* HFRViewController.xib */,
+				DD68BB2A167A4045008FF8FD /* HFRViewController.m */,
+				DD68BB2B167A4045008FF8FD /* HFRAppDelegate.h */,
+				DD68BB2C167A4045008FF8FD /* HFRAppDelegate.m */,
+				DD68BB2D167A4045008FF8FD /* HFRViewController.h */,
 				DDB20FE1167641BA0063B9EB /* 3rd Party */,
 				DDD0B4FE1674D63B004D42D0 /* ObjectiveSugar */,
 				DDB20FE0167641A80063B9EB /* RhythmGroup */,
 				DDB20FE51676424E0063B9EB /* Drawing */,
-				DDD0B4E21674CBC0004D42D0 /* HFRAppDelegate.h */,
-				DDD0B4E31674CBC0004D42D0 /* HFRAppDelegate.m */,
-				DDD0B4EB1674CBC0004D42D0 /* HFRViewController.h */,
-				DDD0B4EC1674CBC0004D42D0 /* HFRViewController.m */,
-				DDD0B4EE1674CBC0004D42D0 /* HFRViewController.xib */,
 				DDD0B4DA1674CBC0004D42D0 /* Supporting Files */,
 			);
 			name = RhythmTap;
@@ -176,13 +175,12 @@
 		DDD0B4DA1674CBC0004D42D0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DDD0B4DB1674CBC0004D42D0 /* RhythmTap-Info.plist */,
-				DDD0B4DC1674CBC0004D42D0 /* InfoPlist.strings */,
-				DDD0B4DF1674CBC0004D42D0 /* main.m */,
-				DDD0B4E11674CBC0004D42D0 /* RhythmTap-Prefix.pch */,
-				DDD0B4E51674CBC0004D42D0 /* Default.png */,
-				DDD0B4E71674CBC0004D42D0 /* Default@2x.png */,
-				DDD0B4E91674CBC0004D42D0 /* Default-568h@2x.png */,
+				DD68BB5A167A40B5008FF8FD /* Default-568h@2x.png */,
+				DD68BB5B167A40B5008FF8FD /* Default.png */,
+				DD68BB5C167A40B5008FF8FD /* Default@2x.png */,
+				DD68BB59167A40AB008FF8FD /* RhythmTap-Prefix.pch */,
+				DD68BB57167A40A3008FF8FD /* main.m */,
+				DD68BB55167A4088008FF8FD /* RhythmTap-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -190,19 +188,19 @@
 		DDD0B4FE1674D63B004D42D0 /* ObjectiveSugar */ = {
 			isa = PBXGroup;
 			children = (
-				DDD0B4FF1674D63B004D42D0 /* NSArray+Accessors.h */,
-				DDD0B5001674D63B004D42D0 /* NSArray+Accessors.m */,
-				DDD0B5011674D63B004D42D0 /* NSDictionary+Rubyfy.h */,
-				DDD0B5021674D63B004D42D0 /* NSDictionary+Rubyfy.m */,
-				DDD0B5031674D63B004D42D0 /* NSMutableArray+Rubyfy.h */,
-				DDD0B5041674D63B004D42D0 /* NSMutableArray+Rubyfy.m */,
-				DDD0B5051674D63B004D42D0 /* NSNumber+Rubyfy.h */,
-				DDD0B5061674D63B004D42D0 /* NSNumber+Rubyfy.m */,
-				DDD0B5071674D63B004D42D0 /* NSSet+Accessors.h */,
-				DDD0B5081674D63B004D42D0 /* NSSet+Accessors.m */,
-				DDD0B5091674D63B004D42D0 /* NSString+Sweetner.h */,
-				DDD0B50A1674D63B004D42D0 /* NSString+Sweetner.m */,
-				DDD0B50B1674D63B004D42D0 /* ObjectiveSugar.h */,
+				DD68BB33167A405F008FF8FD /* NSArray+Accessors.h */,
+				DD68BB34167A405F008FF8FD /* NSArray+Accessors.m */,
+				DD68BB35167A405F008FF8FD /* NSDictionary+Rubyfy.h */,
+				DD68BB36167A405F008FF8FD /* NSDictionary+Rubyfy.m */,
+				DD68BB37167A405F008FF8FD /* NSMutableArray+Rubyfy.h */,
+				DD68BB38167A405F008FF8FD /* NSMutableArray+Rubyfy.m */,
+				DD68BB39167A405F008FF8FD /* NSNumber+Rubyfy.h */,
+				DD68BB3A167A405F008FF8FD /* NSNumber+Rubyfy.m */,
+				DD68BB3B167A405F008FF8FD /* NSSet+Accessors.h */,
+				DD68BB3C167A405F008FF8FD /* NSSet+Accessors.m */,
+				DD68BB3D167A405F008FF8FD /* NSString+Sweetner.h */,
+				DD68BB3E167A405F008FF8FD /* NSString+Sweetner.m */,
+				DD68BB3F167A405F008FF8FD /* ObjectiveSugar.h */,
 			);
 			name = ObjectiveSugar;
 			path = src;
@@ -261,11 +259,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDD0B4DE1674CBC0004D42D0 /* InfoPlist.strings in Resources */,
-				DDD0B4E61674CBC0004D42D0 /* Default.png in Resources */,
-				DDD0B4E81674CBC0004D42D0 /* Default@2x.png in Resources */,
-				DDD0B4EA1674CBC0004D42D0 /* Default-568h@2x.png in Resources */,
-				DDD0B4F01674CBC0004D42D0 /* HFRViewController.xib in Resources */,
+				DD68BB32167A404C008FF8FD /* HFRViewController.xib in Resources */,
+				DD68BB56167A4088008FF8FD /* RhythmTap-Info.plist in Resources */,
+				DD68BB5D167A40B5008FF8FD /* Default-568h@2x.png in Resources */,
+				DD68BB5E167A40B5008FF8FD /* Default.png in Resources */,
+				DD68BB5F167A40B5008FF8FD /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,40 +290,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDD0B4E01674CBC0004D42D0 /* main.m in Sources */,
-				DDD0B4E41674CBC0004D42D0 /* HFRAppDelegate.m in Sources */,
-				DDD0B4ED1674CBC0004D42D0 /* HFRViewController.m in Sources */,
-				DDD0B4FA1674CC86004D42D0 /* Common.m in Sources */,
-				DDD0B4FD1674CD19004D42D0 /* HFRRectangleView.m in Sources */,
-				DDD0B50C1674D63B004D42D0 /* NSArray+Accessors.m in Sources */,
-				DDD0B50D1674D63B004D42D0 /* NSDictionary+Rubyfy.m in Sources */,
-				DDD0B50E1674D63B004D42D0 /* NSMutableArray+Rubyfy.m in Sources */,
-				DDD0B50F1674D63B004D42D0 /* NSNumber+Rubyfy.m in Sources */,
-				DDD0B5101674D63B004D42D0 /* NSSet+Accessors.m in Sources */,
-				DDD0B5111674D63B004D42D0 /* NSString+Sweetner.m in Sources */,
-				DDD0B5141674E1E9004D42D0 /* PSYBlockTimer.m in Sources */,
-				DD0E24561675D6D1002FB5C8 /* HFRRhythmStep.m in Sources */,
-				DD0E24591675D8E3002FB5C8 /* HFRRhythmChain.m in Sources */,
-				DDB20FE4167641F80063B9EB /* HFRMessagesView.m in Sources */,
-				DDC11D3916764A7000D8521B /* MBProgressHUD.m in Sources */,
+				DD68BB25167A4013008FF8FD /* HFRRhythmStep.m in Sources */,
+				DD68BB29167A4028008FF8FD /* HFRRhythmChain.m in Sources */,
+				DD68BB2E167A4045008FF8FD /* HFRViewController.m in Sources */,
+				DD68BB2F167A4045008FF8FD /* HFRAppDelegate.m in Sources */,
+				DD68BB40167A405F008FF8FD /* NSArray+Accessors.m in Sources */,
+				DD68BB41167A405F008FF8FD /* NSDictionary+Rubyfy.m in Sources */,
+				DD68BB42167A405F008FF8FD /* NSMutableArray+Rubyfy.m in Sources */,
+				DD68BB43167A405F008FF8FD /* NSNumber+Rubyfy.m in Sources */,
+				DD68BB44167A405F008FF8FD /* NSSet+Accessors.m in Sources */,
+				DD68BB45167A405F008FF8FD /* NSString+Sweetner.m in Sources */,
+				DD68BB4A167A406A008FF8FD /* MBProgressHUD.m in Sources */,
+				DD68BB4B167A406A008FF8FD /* PSYBlockTimer.m in Sources */,
+				DD68BB52167A4081008FF8FD /* HFRMessagesView.m in Sources */,
+				DD68BB53167A4081008FF8FD /* HFRRectangleView.m in Sources */,
+				DD68BB54167A4081008FF8FD /* Common.m in Sources */,
+				DD68BB58167A40A3008FF8FD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DDD0B4DC1674CBC0004D42D0 /* InfoPlist.strings */ = {
+		DD68BB30167A404C008FF8FD /* HFRViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DDD0B4DD1674CBC0004D42D0 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		DDD0B4EE1674CBC0004D42D0 /* HFRViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DDD0B4EF1674CBC0004D42D0 /* en */,
+				DD68BB31167A404C008FF8FD /* en */,
 			);
 			name = HFRViewController.xib;
 			sourceTree = "<group>";
@@ -402,8 +392,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RythmTap/RhythmTap-Prefix.pch";
-				INFOPLIST_FILE = "RythmTap/RhythmTap-Info.plist";
+				GCC_PREFIX_HEADER = "RhythmTap/RhythmTap-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/RhythmTap/RhythmTap-Info.plist";
 				PRODUCT_NAME = RhythmTap;
 				WRAPPER_EXTENSION = app;
 			};
@@ -413,8 +403,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RythmTap/RhythmTap-Prefix.pch";
-				INFOPLIST_FILE = "RythmTap/RhythmTap-Info.plist";
+				GCC_PREFIX_HEADER = "RhythmTap/RhythmTap-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/RhythmTap/RhythmTap-Info.plist";
 				PRODUCT_NAME = RhythmTap;
 				WRAPPER_EXTENSION = app;
 			};
