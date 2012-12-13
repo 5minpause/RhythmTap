@@ -1,32 +1,32 @@
 //
-//  HFRRythmChain.m
-//  RythmTap
+//  HFRRhythmChain.m
+//  RhythmTap
 //
 //  Created by Holger Frohloff on 10.12.12.
 //  Copyright (c) 2012 Holger Frohloff. All rights reserved.
 //
 
-#import "HFRRythmChain.h"
+#import "HFRRhythmChain.h"
 #import "PSYBlockTimer.h"
-#import "HFRRythmStep.h"
+#import "HFRRhythmStep.h"
 
-@implementation HFRRythmChain
+@implementation HFRRhythmChain
 
 - (void)startChain;
 {
-  [self.chain eachWithIndex:^(HFRRythmStep *step, int index) {
+  [self.chain eachWithIndex:^(HFRRhythmStep *step, int index) {
     [NSTimer scheduledTimerWithTimeInterval:(1.0 * (index+1)) repeats:NO usingBlock:^(NSTimer *timer) {
       [step.stepView highlightWithLength:0.2];
     }];
   }];
 }
 
-- (BOOL)compareWithChain:(HFRRythmChain *)otherChain;
+- (BOOL)compareWithChain:(HFRRhythmChain *)otherChain;
 {
-  __block BOOL result = false;
+  __block BOOL result = YES;
 
-  [otherChain.chain eachWithIndex:^(HFRRythmStep *step, int index) {
-    result = [[self.chain objectAtIndex:index] compareWithRythmStep:step];
+  [otherChain.chain eachWithIndex:^(HFRRhythmStep *step, int index) {
+    result = result && [[self.chain objectAtIndex:index] compareWithRythmStep:step];
   }];
 
   return result;

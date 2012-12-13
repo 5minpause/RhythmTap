@@ -1,6 +1,6 @@
 //
 //  HFRViewController.m
-//  RythmTap
+//  RhythmTap
 //
 //  Created by Holger Frohloff on 09.12.12.
 //  Copyright (c) 2012 Holger Frohloff. All rights reserved.
@@ -9,8 +9,8 @@
 #import "HFRViewController.h"
 #import "HFRRectangleView.h"
 #import "PSYBlockTimer.h"
-#import "HFRRythmStep.h"
-#import "HFRRythmChain.h"
+#import "HFRRhythmStep.h"
+#import "HFRRhythmChain.h"
 #import "MBProgressHUD.h"
 
 #define kHFRDifficulty (@"kHFRDifficulty")
@@ -18,8 +18,8 @@
 @interface HFRViewController ()
 @property (nonatomic, strong) NSArray *rectangleViewsArray;
 @property (nonatomic, strong) NSNumber *difficulty;
-@property (nonatomic, strong) HFRRythmChain *rythmChain;
-@property (nonatomic, strong) HFRRythmChain *userChain;
+@property (nonatomic, strong) HFRRhythmChain *rythmChain;
+@property (nonatomic, strong) HFRRhythmChain *userChain;
 - (void)calculateResult;
 @end
 
@@ -28,7 +28,7 @@
 - (void)touchDetectedAtView:(UITapGestureRecognizer *)tapRec;
 {
   [(HFRRectangleView *)tapRec.view highlightWithLength:0.2];
-  HFRRythmStep *playedStep = [HFRRythmStep new];
+  HFRRhythmStep *playedStep = [HFRRhythmStep new];
   playedStep.index = [self.rectangleViewsArray indexOfObject:(HFRRectangleView *)tapRec.view];
   playedStep.length = [NSNumber numberWithFloat:0.2];
   [self.userChain.chain addObject:playedStep];
@@ -50,13 +50,14 @@
   dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
   dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
     [MBProgressHUD hideHUDForView:self.view animated:YES];
+    self.nextRoundButton.enabled = YES;
   });
 }
 
 - (void)playRythm;
 {
   [self.difficulty timesWithIndex:^(int index) {
-    HFRRythmStep *newStep = [HFRRythmStep new];
+    HFRRhythmStep *newStep = [HFRRhythmStep new];
     int number = arc4random_uniform(9);
     newStep.index = [[NSNumber numberWithInt:number] unsignedIntegerValue];
     newStep.length = [NSNumber numberWithFloat:0.2];
@@ -68,6 +69,7 @@
 
 - (IBAction)newRoundButtonPressed:(id)sender;
 {
+  self.nextRoundButton.enabled = NO;
   [self playRythm];
 }
 
@@ -76,9 +78,10 @@
   [super viewDidLoad];
   [self.view setBackgroundColor:[UIColor blackColor]];
 
-  self.rythmChain = [HFRRythmChain new];
-  self.userChain = [HFRRythmChain new];
-  
+  self.rythmChain = [HFRRhythmChain new];
+  self.userChain = [HFRRhythmChain new];
+  self.nextRoundButton.enabled = NO;
+
   // Standardschwierigkeitsgrad soll 3 Lichter sein
   if ([[NSUserDefaults standardUserDefaults] valueForKey:kHFRDifficulty] != nil) {
     self.difficulty = [[NSUserDefaults standardUserDefaults] valueForKey:kHFRDifficulty];
@@ -109,7 +112,7 @@
     recView.startX = [NSNumber numberWithFloat:0.0];
     recView.startY = [NSNumber numberWithFloat:0.0];
     recView.index = [NSNumber numberWithInt:index];
-    NSUInteger *colorInt = [recView.index unsignedIntegerValue];
+    NSUInteger colorInt = [recView.index unsignedIntegerValue];
     [recView setBackgroundColor:[colors objectAtIndex:colorInt]];
 
     // Gesture Recognizer
@@ -123,7 +126,16 @@
     [recView setNeedsDisplay];
   }];
 
-  [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(playRythm) userInfo:nil repeats:NO];
+  MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+  hud.mode = MBProgressHUDModeText;
+  hud.labelText = @"Get ready!";
+  double delayInSeconds = 2.0;
+  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+  dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(playRythm) userInfo:nil repeats:NO];
+  });
+
 
 }
 

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD0E24561675D6D1002FB5C8 /* HFRRythmStep.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0E24551675D6D1002FB5C8 /* HFRRythmStep.m */; };
-		DD0E24591675D8E3002FB5C8 /* HFRRythmChain.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0E24581675D8E3002FB5C8 /* HFRRythmChain.m */; };
+		DD0E24561675D6D1002FB5C8 /* HFRRhythmStep.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0E24551675D6D1002FB5C8 /* HFRRhythmStep.m */; };
+		DD0E24591675D8E3002FB5C8 /* HFRRhythmChain.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0E24581675D8E3002FB5C8 /* HFRRhythmChain.m */; };
 		DDB20FE4167641F80063B9EB /* HFRMessagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB20FE3167641F80063B9EB /* HFRMessagesView.m */; };
 		DDC11D3916764A7000D8521B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC11D3816764A7000D8521B /* MBProgressHUD.m */; };
 		DDD0B4D41674CBC0004D42D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD0B4D31674CBC0004D42D0 /* UIKit.framework */; };
@@ -34,22 +34,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DD0E24541675D6D1002FB5C8 /* HFRRythmStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFRRythmStep.h; sourceTree = "<group>"; };
-		DD0E24551675D6D1002FB5C8 /* HFRRythmStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFRRythmStep.m; sourceTree = "<group>"; };
-		DD0E24571675D8E3002FB5C8 /* HFRRythmChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFRRythmChain.h; sourceTree = "<group>"; };
-		DD0E24581675D8E3002FB5C8 /* HFRRythmChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFRRythmChain.m; sourceTree = "<group>"; };
+		DD0E24541675D6D1002FB5C8 /* HFRRhythmStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFRRhythmStep.h; sourceTree = "<group>"; };
+		DD0E24551675D6D1002FB5C8 /* HFRRhythmStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFRRhythmStep.m; sourceTree = "<group>"; };
+		DD0E24571675D8E3002FB5C8 /* HFRRhythmChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFRRhythmChain.h; sourceTree = "<group>"; };
+		DD0E24581675D8E3002FB5C8 /* HFRRhythmChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFRRhythmChain.m; sourceTree = "<group>"; };
 		DDB20FE2167641F80063B9EB /* HFRMessagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFRMessagesView.h; sourceTree = "<group>"; };
 		DDB20FE3167641F80063B9EB /* HFRMessagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFRMessagesView.m; sourceTree = "<group>"; };
 		DDC11D3716764A7000D8521B /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		DDC11D3816764A7000D8521B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		DDD0B4D01674CBC0004D42D0 /* RythmTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RythmTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDD0B4D01674CBC0004D42D0 /* RhythmTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RhythmTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD0B4D31674CBC0004D42D0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DDD0B4D51674CBC0004D42D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DDD0B4D71674CBC0004D42D0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DDD0B4DB1674CBC0004D42D0 /* RythmTap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RythmTap-Info.plist"; sourceTree = "<group>"; };
+		DDD0B4DB1674CBC0004D42D0 /* RhythmTap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RhythmTap-Info.plist"; sourceTree = "<group>"; };
 		DDD0B4DD1674CBC0004D42D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DDD0B4DF1674CBC0004D42D0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DDD0B4E11674CBC0004D42D0 /* RythmTap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RythmTap-Prefix.pch"; sourceTree = "<group>"; };
+		DDD0B4E11674CBC0004D42D0 /* RhythmTap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RhythmTap-Prefix.pch"; sourceTree = "<group>"; };
 		DDD0B4E21674CBC0004D42D0 /* HFRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFRAppDelegate.h; sourceTree = "<group>"; };
 		DDD0B4E31674CBC0004D42D0 /* HFRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFRAppDelegate.m; sourceTree = "<group>"; };
 		DDD0B4E51674CBC0004D42D0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -93,15 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DDB20FE0167641A80063B9EB /* RythmGroup */ = {
+		DDB20FE0167641A80063B9EB /* RhythmGroup */ = {
 			isa = PBXGroup;
 			children = (
-				DD0E24541675D6D1002FB5C8 /* HFRRythmStep.h */,
-				DD0E24551675D6D1002FB5C8 /* HFRRythmStep.m */,
-				DD0E24571675D8E3002FB5C8 /* HFRRythmChain.h */,
-				DD0E24581675D8E3002FB5C8 /* HFRRythmChain.m */,
+				DD0E24541675D6D1002FB5C8 /* HFRRhythmStep.h */,
+				DD0E24551675D6D1002FB5C8 /* HFRRhythmStep.m */,
+				DD0E24571675D8E3002FB5C8 /* HFRRhythmChain.h */,
+				DD0E24581675D8E3002FB5C8 /* HFRRhythmChain.m */,
 			);
-			name = RythmGroup;
+			name = RhythmGroup;
 			sourceTree = "<group>";
 		};
 		DDB20FE1167641BA0063B9EB /* 3rd Party */ = {
@@ -131,7 +131,7 @@
 		DDD0B4C71674CBC0004D42D0 = {
 			isa = PBXGroup;
 			children = (
-				DDD0B4D91674CBC0004D42D0 /* RythmTap */,
+				DDD0B4D91674CBC0004D42D0 /* RhythmTap */,
 				DDD0B4D21674CBC0004D42D0 /* Frameworks */,
 				DDD0B4D11674CBC0004D42D0 /* Products */,
 			);
@@ -140,7 +140,7 @@
 		DDD0B4D11674CBC0004D42D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DDD0B4D01674CBC0004D42D0 /* RythmTap.app */,
+				DDD0B4D01674CBC0004D42D0 /* RhythmTap.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,12 +155,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DDD0B4D91674CBC0004D42D0 /* RythmTap */ = {
+		DDD0B4D91674CBC0004D42D0 /* RhythmTap */ = {
 			isa = PBXGroup;
 			children = (
 				DDB20FE1167641BA0063B9EB /* 3rd Party */,
 				DDD0B4FE1674D63B004D42D0 /* ObjectiveSugar */,
-				DDB20FE0167641A80063B9EB /* RythmGroup */,
+				DDB20FE0167641A80063B9EB /* RhythmGroup */,
 				DDB20FE51676424E0063B9EB /* Drawing */,
 				DDD0B4E21674CBC0004D42D0 /* HFRAppDelegate.h */,
 				DDD0B4E31674CBC0004D42D0 /* HFRAppDelegate.m */,
@@ -169,16 +169,17 @@
 				DDD0B4EE1674CBC0004D42D0 /* HFRViewController.xib */,
 				DDD0B4DA1674CBC0004D42D0 /* Supporting Files */,
 			);
+			name = RhythmTap;
 			path = RythmTap;
 			sourceTree = "<group>";
 		};
 		DDD0B4DA1674CBC0004D42D0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DDD0B4DB1674CBC0004D42D0 /* RythmTap-Info.plist */,
+				DDD0B4DB1674CBC0004D42D0 /* RhythmTap-Info.plist */,
 				DDD0B4DC1674CBC0004D42D0 /* InfoPlist.strings */,
 				DDD0B4DF1674CBC0004D42D0 /* main.m */,
-				DDD0B4E11674CBC0004D42D0 /* RythmTap-Prefix.pch */,
+				DDD0B4E11674CBC0004D42D0 /* RhythmTap-Prefix.pch */,
 				DDD0B4E51674CBC0004D42D0 /* Default.png */,
 				DDD0B4E71674CBC0004D42D0 /* Default@2x.png */,
 				DDD0B4E91674CBC0004D42D0 /* Default-568h@2x.png */,
@@ -210,9 +211,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DDD0B4CF1674CBC0004D42D0 /* RythmTap */ = {
+		DDD0B4CF1674CBC0004D42D0 /* RhythmTap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDD0B4F31674CBC0004D42D0 /* Build configuration list for PBXNativeTarget "RythmTap" */;
+			buildConfigurationList = DDD0B4F31674CBC0004D42D0 /* Build configuration list for PBXNativeTarget "RhythmTap" */;
 			buildPhases = (
 				DDD0B4CC1674CBC0004D42D0 /* Sources */,
 				DDD0B4CD1674CBC0004D42D0 /* Frameworks */,
@@ -223,9 +224,9 @@
 			);
 			dependencies = (
 			);
-			name = RythmTap;
+			name = RhythmTap;
 			productName = RythmTap;
-			productReference = DDD0B4D01674CBC0004D42D0 /* RythmTap.app */;
+			productReference = DDD0B4D01674CBC0004D42D0 /* RhythmTap.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -238,7 +239,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Holger Frohloff";
 			};
-			buildConfigurationList = DDD0B4CB1674CBC0004D42D0 /* Build configuration list for PBXProject "RythmTap" */;
+			buildConfigurationList = DDD0B4CB1674CBC0004D42D0 /* Build configuration list for PBXProject "RhythmTap" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -250,7 +251,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DDD0B4CF1674CBC0004D42D0 /* RythmTap */,
+				DDD0B4CF1674CBC0004D42D0 /* RhythmTap */,
 			);
 		};
 /* End PBXProject section */
@@ -303,8 +304,8 @@
 				DDD0B5101674D63B004D42D0 /* NSSet+Accessors.m in Sources */,
 				DDD0B5111674D63B004D42D0 /* NSString+Sweetner.m in Sources */,
 				DDD0B5141674E1E9004D42D0 /* PSYBlockTimer.m in Sources */,
-				DD0E24561675D6D1002FB5C8 /* HFRRythmStep.m in Sources */,
-				DD0E24591675D8E3002FB5C8 /* HFRRythmChain.m in Sources */,
+				DD0E24561675D6D1002FB5C8 /* HFRRhythmStep.m in Sources */,
+				DD0E24591675D8E3002FB5C8 /* HFRRhythmChain.m in Sources */,
 				DDB20FE4167641F80063B9EB /* HFRMessagesView.m in Sources */,
 				DDC11D3916764A7000D8521B /* MBProgressHUD.m in Sources */,
 			);
@@ -401,9 +402,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RythmTap/RythmTap-Prefix.pch";
-				INFOPLIST_FILE = "RythmTap/RythmTap-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "RythmTap/RhythmTap-Prefix.pch";
+				INFOPLIST_FILE = "RythmTap/RhythmTap-Info.plist";
+				PRODUCT_NAME = RhythmTap;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -412,9 +413,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RythmTap/RythmTap-Prefix.pch";
-				INFOPLIST_FILE = "RythmTap/RythmTap-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "RythmTap/RhythmTap-Prefix.pch";
+				INFOPLIST_FILE = "RythmTap/RhythmTap-Info.plist";
+				PRODUCT_NAME = RhythmTap;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -422,7 +423,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DDD0B4CB1674CBC0004D42D0 /* Build configuration list for PBXProject "RythmTap" */ = {
+		DDD0B4CB1674CBC0004D42D0 /* Build configuration list for PBXProject "RhythmTap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DDD0B4F11674CBC0004D42D0 /* Debug */,
@@ -431,7 +432,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDD0B4F31674CBC0004D42D0 /* Build configuration list for PBXNativeTarget "RythmTap" */ = {
+		DDD0B4F31674CBC0004D42D0 /* Build configuration list for PBXNativeTarget "RhythmTap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DDD0B4F41674CBC0004D42D0 /* Debug */,

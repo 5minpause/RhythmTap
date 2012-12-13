@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DDD0B4CF1674CBC0004D42D0"
                BuildableName = "RythmTap.app"
-               BlueprintName = "RythmTap"
-               ReferencedContainer = "container:RythmTap.xcodeproj">
+               BlueprintName = "RhythmTap"
+               ReferencedContainer = "container:RhythmTap.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DDD0B4CF1674CBC0004D42D0"
             BuildableName = "RythmTap.app"
-            BlueprintName = "RythmTap"
-            ReferencedContainer = "container:RythmTap.xcodeproj">
+            BlueprintName = "RhythmTap"
+            ReferencedContainer = "container:RhythmTap.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,8 +53,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DDD0B4CF1674CBC0004D42D0"
             BuildableName = "RythmTap.app"
-            BlueprintName = "RythmTap"
-            ReferencedContainer = "container:RythmTap.xcodeproj">
+            BlueprintName = "RhythmTap"
+            ReferencedContainer = "container:RhythmTap.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,8 +71,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DDD0B4CF1674CBC0004D42D0"
             BuildableName = "RythmTap.app"
-            BlueprintName = "RythmTap"
-            ReferencedContainer = "container:RythmTap.xcodeproj">
+            BlueprintName = "RhythmTap"
+            ReferencedContainer = "container:RhythmTap.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
