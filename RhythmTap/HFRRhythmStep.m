@@ -11,6 +11,7 @@
 @implementation HFRRhythmStep
 - (BOOL)compareWithRythmStep:(HFRRhythmStep *)step;
 {
-  return (step.index == self.index && step.length.floatValue == self.length.floatValue);
+  DLog(@"steplength: %f, sellength: %f", step.length.floatValue, self.length.floatValue);
+  return (step.index == self.index);
 }
 @end

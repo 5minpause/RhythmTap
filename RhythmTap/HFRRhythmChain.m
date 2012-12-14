@@ -15,8 +15,9 @@
 - (void)startChain;
 {
   [self.chain eachWithIndex:^(HFRRhythmStep *step, int index) {
+#TODO Richtige Zeit einstellen, wann der nächste leuchtet.
     [NSTimer scheduledTimerWithTimeInterval:(1.0 * (index+1)) repeats:NO usingBlock:^(NSTimer *timer) {
-      [step.stepView highlightWithLength:0.2];
+      [step.stepView highlightWithLength:step.length.floatValue];
     }];
   }];
 }

@@ -29,18 +29,16 @@
 
 - (void)touchDetectedAtView:(UITapGestureRecognizer *)tapRec;
 {
-  
-  [(HFRRectangleView *)tapRec.view highlightWithLength:0.2];
-  __block HFRRhythmStep *playedStep = [HFRRhythmStep new];
-  playedStep.index = [self.rectangleViewsArray indexOfObject:(HFRRectangleView *)tapRec.view];
   [[NSNotificationCenter defaultCenter] addObserverForName:kHFRTouchTime
                                                     object:nil
                                                      queue:[NSOperationQueue mainQueue]
                                                 usingBlock:^(NSNotification *note)
   {
+    __block HFRRhythmStep *playedStep = [HFRRhythmStep new];
+    playedStep.index = [self.rectangleViewsArray indexOfObject:(HFRRectangleView *)tapRec.view];
     playedStep.length = [note.userInfo valueForKey:kHFRTouchLength];
+    [self.userChain.chain addObject:playedStep];
   }];
-  [self.userChain.chain addObject:playedStep];
   if (self.userChain.chain.count == self.difficulty.unsignedIntegerValue) {
     [self calculateResult];
   }
@@ -69,7 +67,14 @@
     HFRRhythmStep *newStep = [HFRRhythmStep new];
     int number = arc4random_uniform(9);
     newStep.index = [[NSNumber numberWithInt:number] unsignedIntegerValue];
-    newStep.length = [NSNumber numberWithFloat:0.2];
+
+    #define ARC4RANDOM_MAX 0x100000000
+    double maxRange = 2.5;
+    double minRange = 0.2;
+    double val = ((double)arc4random() / ARC4RANDOM_MAX)
+    * (maxRange - minRange)
+    + minRange;
+    newStep.length = [NSNumber numberWithFloat:val];
     newStep.stepView = [self.rectangleViewsArray objectAtIndex:[[NSNumber numberWithInt:number] unsignedIntegerValue]];
     [self.rythmChain.chain addObject:newStep];
   }];

@@ -54,15 +54,20 @@
   UIColor *newColor = [self.bgColor colorWithAlphaComponent:0.2];
   [self setBackgroundColor:newColor];
   [self setNeedsDisplay];
-//  [NSTimer scheduledTimerWithTimeInterval:length repeats:NO usingBlock:^(NSTimer *timer) {
-//    [self setBackgroundColor:oldColor];
-//    [self setNeedsDisplay];
-//  }];
+  double delayInSeconds = length;
+  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+  dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+    [self setBackgroundColor:self.bgColor];
+    [self setNeedsDisplay];
+  });
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
   self.touchStarted = [NSDate date];
+  UIColor *newColor = [self.bgColor colorWithAlphaComponent:0.2];
+  [self setBackgroundColor:newColor];
+  [self setNeedsDisplay];
 }
 
 - (void)handleTouchEnded;
