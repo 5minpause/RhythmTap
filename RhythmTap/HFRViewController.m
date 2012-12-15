@@ -49,6 +49,7 @@
   BOOL result = [self.userChain compareWithChain:self.rythmChain];
   [self.userChain.chain removeAllObjects];
   [self.rythmChain.chain removeAllObjects];
+  self.rythmChain.stepToPlay = 0;
 
   MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
   hud.mode = MBProgressHUDModeText;
@@ -69,15 +70,16 @@
     newStep.index = [[NSNumber numberWithInt:number] unsignedIntegerValue];
 
     #define ARC4RANDOM_MAX 0x100000000
-    double maxRange = 2.5;
+    double maxRange = 1.5;
     double minRange = 0.2;
-    double val = ((double)arc4random() / ARC4RANDOM_MAX)
-    * (maxRange - minRange)
-    + minRange;
-    newStep.length = [NSNumber numberWithFloat:val];
+    double lengthVal = ((double)arc4random() / ARC4RANDOM_MAX) * (maxRange - minRange) + minRange;
+    double pauseVal = ((double)arc4random() / ARC4RANDOM_MAX) * (1.0 - 0.5) + 0.5;
+    newStep.length = [NSNumber numberWithFloat:lengthVal];
+    newStep.pauseAfterStep = [NSNumber numberWithFloat:pauseVal];
     newStep.stepView = [self.rectangleViewsArray objectAtIndex:[[NSNumber numberWithInt:number] unsignedIntegerValue]];
     [self.rythmChain.chain addObject:newStep];
   }];
+  DLog(@"Rythm set up");
   [self.rythmChain startChain];
 }
 

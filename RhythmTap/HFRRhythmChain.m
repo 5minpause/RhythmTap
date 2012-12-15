@@ -10,16 +10,44 @@
 #import "PSYBlockTimer.h"
 #import "HFRRhythmStep.h"
 
+#define kHFRPlayNextStep  (@"kHFRPlayNextStep")
+#define kHFRStepIndex     (@"kHFRStepIndex")
+
 @implementation HFRRhythmChain
+
+- (void)playStepAtIndex:(int)index;
+{
+  [[NSNotificationCenter defaultCenter] removeObserver:self name:kHFRPlayNextStep object:nil];
+  self.stepToPlay += 1;
+  DLog(@"play Step at Index: %d", index);
+  @try {
+    HFRRhythmStep *step = [self.chain objectAtIndex:index];
+    [step.stepView highlightWithLength:step.length.floatValue andPause:step.pauseAfterStep.floatValue];
+    [[NSNotificationCenter defaultCenter] addObserverForName:kHFRPlayNextStep
+                                                      object:nil
+                                                       queue:[NSOperationQueue mainQueue]
+                                                  usingBlock:^(NSNotification *note)
+     {
+       DLog(@"Next step note gathered");
+       if (self.stepToPlay < self.chain.count) {
+         [self playStepAtIndex:self.stepToPlay];
+       } else{
+         [[NSNotificationCenter defaultCenter] removeObserver:self name:kHFRPlayNextStep object:nil];
+       }
+     }];
+  }
+  @catch (NSException *exception) {
+    DLog(@"Tried to access object out of bounds! index: %d", index);
+  }
+  @finally {
+
+  }
+}
 
 - (void)startChain;
 {
-  [self.chain eachWithIndex:^(HFRRhythmStep *step, int index) {
-#TODO Richtige Zeit einstellen, wann der nächste leuchtet.
-    [NSTimer scheduledTimerWithTimeInterval:(1.0 * (index+1)) repeats:NO usingBlock:^(NSTimer *timer) {
-      [step.stepView highlightWithLength:step.length.floatValue];
-    }];
-  }];
+  DLog(@"starting Chain");
+  [self playStepAtIndex:0];
 }
 
 - (BOOL)compareWithChain:(HFRRhythmChain *)otherChain;
@@ -37,6 +65,7 @@
   self = [super init];
   if (self) {
     _chain = [NSMutableArray new];
+    _stepToPlay = 0;
   }
   return self;
 }

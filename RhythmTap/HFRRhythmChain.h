@@ -10,7 +10,7 @@
 
 @interface HFRRhythmChain : NSObject
 @property (nonatomic, strong) NSMutableArray *chain;
-
+@property (nonatomic) NSUInteger stepToPlay;
 - (void)startChain;
 - (BOOL)compareWithChain:(HFRRhythmChain *)otherChain;
 @end

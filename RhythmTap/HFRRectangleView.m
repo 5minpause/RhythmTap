@@ -12,6 +12,7 @@
 
 #define kHFRTouchTime      (@"kHFRTouchTime")
 #define kHFRTouchLength    (@"kHFRTouchLength")
+#define kHFRPlayNextStep  (@"kHFRPlayNextStep")
 
 @interface HFRRectangleView ()
 @property (nonatomic, strong) NSDate *touchStarted;
@@ -49,16 +50,27 @@
   CGContextRestoreGState(context);
 }
 
-- (void)highlightWithLength:(float)length;
+- (void)highlightWithLength:(float)length andPause:(float)pause;
 {
+  DLog(@"Highlighting");
   UIColor *newColor = [self.bgColor colorWithAlphaComponent:0.2];
   [self setBackgroundColor:newColor];
   [self setNeedsDisplay];
+
   double delayInSeconds = length;
   dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
   dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
     [self setBackgroundColor:self.bgColor];
     [self setNeedsDisplay];
+  });
+
+  double pauseInSeconds = pause + length;
+  dispatch_time_t pauseTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(pauseInSeconds * NSEC_PER_SEC));
+  dispatch_after(pauseTime, dispatch_get_main_queue(), ^(void){
+    DLog(@"Posting next step note");
+    [[NSNotificationCenter defaultCenter] postNotificationName:kHFRPlayNextStep
+                                                        object:nil
+                                                      userInfo:nil];
   });
 }
 
@@ -73,7 +85,7 @@
 - (void)handleTouchEnded;
 {
   double time = [self.touchStarted timeIntervalSinceNow] * (-1);
-  NSDictionary *dic = [NSDictionary dictionaryWithObject:[NSNumber numberWithDouble:time] forKey:kHFRTouchLength];
+  NSDictionary *dic = @{kHFRTouchLength : [NSNumber numberWithDouble:time]};
   [[NSNotificationCenter defaultCenter] postNotificationName:kHFRTouchTime
                                                       object:nil
                                                     userInfo:dic];

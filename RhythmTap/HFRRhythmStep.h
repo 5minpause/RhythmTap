@@ -12,6 +12,7 @@
 @interface HFRRhythmStep : NSObject
 @property (nonatomic) NSUInteger index;
 @property (nonatomic) NSNumber *length;
+@property (nonatomic) NSNumber *pauseAfterStep;
 @property (nonatomic, strong) HFRRectangleView *stepView;
 - (BOOL)compareWithRythmStep:(HFRRhythmStep *)step;
 @end

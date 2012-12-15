@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD470F35167CE6D00016E4DF /* HFRResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD470F33167CE6D00016E4DF /* HFRResultsViewController.m */; };
+		DD470F36167CE6D00016E4DF /* HFRResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD470F34167CE6D00016E4DF /* HFRResultsViewController.xib */; };
 		DD68BB25167A4013008FF8FD /* HFRRhythmStep.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68BB24167A4013008FF8FD /* HFRRhythmStep.m */; };
 		DD68BB29167A4028008FF8FD /* HFRRhythmChain.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68BB27167A4028008FF8FD /* HFRRhythmChain.m */; };
 		DD68BB2E167A4045008FF8FD /* HFRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD68BB2A167A4045008FF8FD /* HFRViewController.m */; };
@@ -34,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD470F32167CE6D00016E4DF /* HFRResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFRResultsViewController.h; path = RhythmTap/HFRResultsViewController.h; sourceTree = SOURCE_ROOT; };
+		DD470F33167CE6D00016E4DF /* HFRResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFRResultsViewController.m; path = RhythmTap/HFRResultsViewController.m; sourceTree = SOURCE_ROOT; };
+		DD470F34167CE6D00016E4DF /* HFRResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HFRResultsViewController.xib; path = RhythmTap/HFRResultsViewController.xib; sourceTree = SOURCE_ROOT; };
 		DD68BB23167A4013008FF8FD /* HFRRhythmStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFRRhythmStep.h; path = RhythmTap/HFRRhythmStep.h; sourceTree = SOURCE_ROOT; };
 		DD68BB24167A4013008FF8FD /* HFRRhythmStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFRRhythmStep.m; path = RhythmTap/HFRRhythmStep.m; sourceTree = SOURCE_ROOT; };
 		DD68BB27167A4028008FF8FD /* HFRRhythmChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFRRhythmChain.m; path = RhythmTap/HFRRhythmChain.m; sourceTree = SOURCE_ROOT; };
@@ -92,11 +97,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD470F30167CE67F0016E4DF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DD68BB2D167A4045008FF8FD /* HFRViewController.h */,
+				DD68BB2A167A4045008FF8FD /* HFRViewController.m */,
+				DD470F32167CE6D00016E4DF /* HFRResultsViewController.h */,
+				DD470F33167CE6D00016E4DF /* HFRResultsViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		DD470F31167CE6970016E4DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD68BB30167A404C008FF8FD /* HFRViewController.xib */,
+				DD470F34167CE6D00016E4DF /* HFRResultsViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		DDB20FE0167641A80063B9EB /* RhythmGroup */ = {
 			isa = PBXGroup;
 			children = (
-				DD68BB27167A4028008FF8FD /* HFRRhythmChain.m */,
 				DD68BB28167A4028008FF8FD /* HFRRhythmChain.h */,
+				DD68BB27167A4028008FF8FD /* HFRRhythmChain.m */,
 				DD68BB23167A4013008FF8FD /* HFRRhythmStep.h */,
 				DD68BB24167A4013008FF8FD /* HFRRhythmStep.m */,
 			);
@@ -157,11 +182,10 @@
 		DDD0B4D91674CBC0004D42D0 /* RhythmTap */ = {
 			isa = PBXGroup;
 			children = (
-				DD68BB30167A404C008FF8FD /* HFRViewController.xib */,
-				DD68BB2A167A4045008FF8FD /* HFRViewController.m */,
 				DD68BB2B167A4045008FF8FD /* HFRAppDelegate.h */,
 				DD68BB2C167A4045008FF8FD /* HFRAppDelegate.m */,
-				DD68BB2D167A4045008FF8FD /* HFRViewController.h */,
+				DD470F31167CE6970016E4DF /* Views */,
+				DD470F30167CE67F0016E4DF /* ViewController */,
 				DDB20FE1167641BA0063B9EB /* 3rd Party */,
 				DDD0B4FE1674D63B004D42D0 /* ObjectiveSugar */,
 				DDB20FE0167641A80063B9EB /* RhythmGroup */,
@@ -264,6 +288,7 @@
 				DD68BB5D167A40B5008FF8FD /* Default-568h@2x.png in Resources */,
 				DD68BB5E167A40B5008FF8FD /* Default.png in Resources */,
 				DD68BB5F167A40B5008FF8FD /* Default@2x.png in Resources */,
+				DD470F36167CE6D00016E4DF /* HFRResultsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +331,7 @@
 				DD68BB53167A4081008FF8FD /* HFRRectangleView.m in Sources */,
 				DD68BB54167A4081008FF8FD /* Common.m in Sources */,
 				DD68BB58167A40A3008FF8FD /* main.m in Sources */,
+				DD470F35167CE6D00016E4DF /* HFRResultsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
